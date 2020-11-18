@@ -7,7 +7,7 @@ const appInitialState = {
 
 const SET_HEART_BEAT = 'SET_HEART_BEAT';
 export const setHeartBeat = createAction(SET_HEART_BEAT);
-
+// export const selectBoatNumber = state => state.App.heartBeat;
 const App = handleActions(
   {
     [SET_HEART_BEAT]: (state, { payload }) => ({

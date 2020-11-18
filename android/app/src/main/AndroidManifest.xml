@@ -7,11 +7,11 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
 
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION "/>
   <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-
 
     <application
       android:name="com.shipsfocus.wetrack.MainApplication"
@@ -20,6 +20,8 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
       android:theme="@style/AppTheme">
+
+
       <activity
         android:name="com.shipsfocus.wetrack.MainActivity"
         android:label="@string/app_name"
@@ -39,6 +41,8 @@
         <service
             android:name="com.shipsfocus.wetrack.HeartbeatEventService">
         </service>
+
+        <service android:name="com.voximplant.foregroundservice.VIForegroundService"> </service>
         <receiver
             android:name="com.shipsfocus.wetrack.BootUpReceiver"
             android:enabled="true"
@@ -52,6 +56,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
+
+
+  <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyB6vOmKKolcdxhVuVMi66xA66IDqa94NPA"/> 
     </application>
 
 </manifest>
