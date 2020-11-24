@@ -10,7 +10,7 @@ import * as Sentry from '@sentry/react-native';
 
 
 Sentry.init({
-  dsn: 'https://97a96413a4f94d45b198860fc8063041@o448600.ingest.sentry.io/5430196',
+  dsn: "https://d7004054921f406998d956563187b73f@o155589.ingest.sentry.io/5528138",
   enableAutoSessionTracking: true,
 });
 
